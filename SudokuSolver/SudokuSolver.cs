@@ -31,5 +31,14 @@ namespace SudokuSolver {
         return false;
       }
     }
+    public static string ToString(SudokuBoard board) {
+      StringBuilder sb =new();
+      for(int i=0; i<size; i++){
+        for(int j=0; j<size; j++){
+          sb.Append(board[i,j] + " ");
+        }
+      }
+      return sb.ToString();
+    }
   }
 }
